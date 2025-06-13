@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
+    background-color: #007BFF;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button.trendyol {
+    background-color: #ff6900;
+}
+
+.button.trendyol:hover {
+    background-color: #cc5500;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    p { font-size: 1rem; }
+}
