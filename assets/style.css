@@ -51,6 +51,8 @@ p {
     background-color: #007BFF;
     border-radius: 8px;
     transition: background 0.3s ease;
+    border: none;
+    cursor: pointer;
 }
 
 .button:hover {
@@ -65,17 +67,47 @@ p {
     background-color: #cc5500;
 }
 
-@media (max-width: 600px) {
-    h1 { font-size: 2rem; }
-    p { font-size: 1rem; }
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    animation: fadeIn 0.5s ease-in;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: black;
 }
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    max-width: 400px;
-    width: 100%;
+    margin-top: 20px;
 }
 
 .contact-form input,
@@ -101,3 +133,13 @@ p {
     background-color: #1e7e34;
 }
 
+.email-info {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    p { font-size: 1rem; }
+}
